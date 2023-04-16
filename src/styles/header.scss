@@ -1,0 +1,38 @@
+.header {
+    height: 400px;
+    display: grid;
+    color: white;
+    grid-template-rows: 25% 1fr 1fr 1fr 25%;
+
+    & > * {
+        margin: 0 auto;
+    }
+
+    h1 {
+        grid-row-start: 3;
+    }
+
+    p {
+        grid-row-start: 4;
+    }
+
+    .header-logo {
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        background-color: white;
+        grid-row-start: 2;
+
+        i {
+            color: rgb(110, 110, 210);
+            margin-top: 12px;
+            margin-left: 13px;
+        }
+    }
+
+    .header-subtitlte {
+        color: gainsboro;
+        width: 330px;
+    }
+
+}
