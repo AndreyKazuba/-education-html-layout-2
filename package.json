@@ -1,24 +1,21 @@
 {
-  "name": "html-layout-2",
+  "name": "new",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "node .",
+    "dev": "nodemon . & npm run scss",
+    "scss": "sass --watch src/styles/main.scss public/styles/main.css"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.7.3",
-    "html-webpack-plugin": "^5.5.1",
-    "sass": "^1.62.0",
-    "sass-loader": "^13.2.2",
-    "style-loader": "^3.3.2",
-    "webpack": "^5.79.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.3"
+    "nodemon": "^2.0.22",
+    "sass": "^1.62.1"
   }
 }
